@@ -8,7 +8,6 @@ function gradient() {
 
 
 	for (var i = 0; i < 99; i++) {
-//		if(i % 2 === 0) {
 			var box = document.createElement("div");
 			var rand1 = Math.floor(Math.random() * 255);
 			var rand2 = Math.floor(Math.random() * 255);
@@ -21,8 +20,6 @@ function gradient() {
 			
 			body.appendChild(box);
 
-
-///		} 
 
 
 	}
