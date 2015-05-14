@@ -9,7 +9,11 @@ var body = document.querySelector("body");
 for (var i = 0; i < 99; i++) {
 	if(i % 2 === 0) {
 		var box = document.createElement("div");
-		box.style.backgroundColor = "black";
+		var rand1 = Math.floor(Math.random() * 255);
+		var rand2 = Math.floor(Math.random() * 255);
+		var rand3 = Math.floor(Math.random() * 255);
+		var color = "rgb(" + rand1 + "," + rand2 + "," + rand3 +")"
+		box.style.backgroundColor = color;
 		box.style.width = "11.1%";
 		box.style.float = "left";
 		box.style.paddingBottom = "11.1%";
@@ -17,15 +21,7 @@ for (var i = 0; i < 99; i++) {
 		body.appendChild(box);
 
 
-	} else {
-		var boxRed = document.createElement("div");
-		boxRed.style.backgroundColor = "red";
-		boxRed.style.width = "11.1%";
-		boxRed.style.float = "left";
-		boxRed.style.paddingBottom = "11.1%";
-		
-		body.appendChild(boxRed);
-	}
+	} 
 
 
 }
